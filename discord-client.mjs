@@ -70,6 +70,14 @@ export class DiscordClient {
         return await response.json();
     }
 
+    async removeMember(guilId, userId) {
+        const endpoint = `/guilds/${guildId}/members/${userId}`;
+      
+        const response = await this.#discordRequest(endpoint, { method: 'DELETE' });
+      
+        return await response.json();
+    }
+
     async createChannelMessage(channelId, messageContent) {
         const endpoint = `/channels/${channelId}/messages`;
 
