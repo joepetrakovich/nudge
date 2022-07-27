@@ -1,0 +1,21 @@
+{
+  "name": "nudge-custom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv": "^6.2.0",
+    "date-fns": "^2.29.1",
+    "dotenv": "^16.0.1",
+    "fs": "0.0.1-security",
+    "node-fetch": "^3.2.8",
+    "uuid": "^8.3.2"
+  }
+}
