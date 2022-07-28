@@ -5,11 +5,13 @@ DONE - add csv logging of channel id and role id, and date of run.
 DONE - add the cleanup code.
 DONE -- bot checks if there are any logged channels and roles older than 3 days and deletes them.
 DONE - add to source control.
+DONE - add code that kicks already reminded people after a month without role.
 
 ## TODO:
 ---------------
-- add code that kicks already reminded people after a month without role.
-- find out the exact message julian wants.
+- test out the kick logic.
+- find out the exact message julian wants.=
+- add better error handling and logging so we know what goes wrong and its graceful.
 - test it out
 - set it up somewhere and configure the cron to run it
 

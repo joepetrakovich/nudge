@@ -70,7 +70,7 @@ export class DiscordClient {
         return await response.json();
     }
 
-    async removeMember(guilId, userId) {
+    async removeMember(guildId, userId) {
         const endpoint = `/guilds/${guildId}/members/${userId}`;
       
         const response = await this.#discordRequest(endpoint, { method: 'DELETE' });

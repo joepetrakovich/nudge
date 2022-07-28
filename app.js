@@ -26,7 +26,7 @@ async function nudge() {
 
         const slowRollerRole = await discordClient.createMentionableRole(guildId, "Slow Roller");
 
-        for (const member in membersToNudge) {
+        for (const member of membersToNudge) {
             await discordClient.addRoleToGuildMember(guildId, slowRollerRole.id, member.user.id);
         }
 
@@ -43,7 +43,7 @@ async function nudge() {
 async function kickMembers(allMembers, alreadyNudgedUserIds, discordClient, guildId) {
     const membersToKick = allMembers.filter(member => hasRoleCount(member, 0) && !member.user.bot && joinedDaysAgo(member) >= 30 && alreadyNudgedUserIds.includes(member.user.id));
 
-    for (const member in membersToKick) {
+    for (const member of membersToKick) {
         await discordClient.removeMember(guildId, member.user.id);
     }
 }
